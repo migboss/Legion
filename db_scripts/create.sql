@@ -49,3 +49,5 @@ alter table user_game add constraint user_game_fk_game
 alter table user_game add constraint user_game_fk_user_game_state
             foreign key (ug_state_id) references user_game_state(ugst_id) 
 			ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
