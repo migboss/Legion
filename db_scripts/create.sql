@@ -56,7 +56,7 @@ alter table user_game_card add constraint ugc_fk_ug
 			ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 alter table user_game_card add constraint ugc_fk_card
-            foreign key (ugc_crd_id) references card(card_id) 
+            foreign key (ugc_crd_id) references card(crd_id) 
             ON DELETE NO ACTION ON UPDATE NO ACTION;          
 
 alter table game add constraint game_fk_match_state
@@ -74,5 +74,3 @@ alter table user_game add constraint user_game_fk_game
 alter table user_game add constraint user_game_fk_user_game_state
             foreign key (ug_state_id) references user_game_state(ugst_id) 
 			ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
